@@ -32,7 +32,7 @@
     <nav class="nav header__nav">
       <ul class="nav__list list-reset">
         <li class="nav__item drop-down">
-          <a class="link nav__link" href="#">О нас</a>
+          <a class="link nav__link" href="about.html">О нас</a>
           <div class="drop-down__wrapper">
             <ul class="drop-down__list list-reset">
               <li class="drop-down__item"><a href="#" class="drop-down__link link">Текст 1</a></li>
@@ -81,15 +81,13 @@
     </nav>
     <div class="header__right">
       <a class="link" href="#">
-      <div class="phone header__phone">
+      <div class="phone phone_inline header__phone">
         +7 929 657-57-77
-        <div class="phone__call">
-          Перезвонить вам?
-        </div>
       </div></a>
-      <a class="link link_flex" href="#">
+      <a class="link link_flex" href="cart.html">
       <div class="cart header__cart">
         Корзина
+        <span class="cart__num-products">0</span>
       </div></a>
     </div>
   </div>
@@ -110,80 +108,154 @@
 </section>
 
     <main class="main">
-      <section class="hero">
-  <div class="container hero__container">
-    <div class="hero__left">
-      <h2 class="title title_color_shiraz title_size_medium hero__title">
-        Знакомьтесь, главный человек проекта «Особенный Наполеон»
-      </h2>
-      <p class="descr descr_size_large hero__descr">Шеф-кондитер, Татьяна Варламова. Именно она отвечает своим лицом и репутацией за качество тортов!</p>
-      <a class="link" href="#"><button class="btn btn-reset btn_color_gradient-shiraz">О шеф-кондитере</button></a>
-    </div>
-    <div class="hero__slider">
-      <div class="hero__swiper">
-        <div class="swiper-wrapper hero__swiper-wrapper">
-          <div class="swiper-slide hero__swiper-slide">
-            <img src="./img/hero-1.jpg" alt="slide-1">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-2.jpg" alt="slide-2">
 
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-3.jpg" alt="slide-3">
-
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-4.jpg" alt="slide-4">
-
-          </div>
-        </div>
-      </div>
-      <div class="hero__controls">
-        <span class="hero__slide-prev"></span>
-        <span class="hero__first">01</span>
-        <div class="hero__pagination"></div>
-        <span class="hero__last">04</span>
-        <span class="hero__slide-next"></span>
-      </div>
-    </div>
-    <!-- <div class="social hero__social"> -->
-      <!-- <div class="social__begin"></div> -->
-      <!-- <div class="social__whatsapp">
-        <a href="#">
-          <svg class="social__item" width="40" height="40">
-            <use xlink:href="./img/svg/whatsapp.svg#pic"></use>
-          </svg>
-        </a>
-      </div> -->
-    <!-- </div> -->
+      <section class="crumbs">
+  <div class="container__crumbs container">
+    <a class="link" href="index.html"><span class="crumbs__prev">Главная</span></a>
+    <span class="span crumbs__now">Корзина</span>
   </div>
 </section>
 
-      <section class="hero-mobile">
-  <div class="mobile-swiper hero__mobile-swiper">
-    <div class="swiper-wrapper mobile-swiper__wrapper">
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Натуральные торты ручной работы</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
+      <section class="cart-desktop">
+  <div class="container cart-desktop__container">
+    <table class="cart-desktop__table">
+      <tr class="cart-desktop__table-row cart-desktop__table-top">
+        <th class="cart-desktop__table-header cart-desktop__table-col">Продукт</th>
+        <th class="cart-desktop__table-header cart-desktop__table-col">Цена</th>
+        <th class="cart-desktop__table-header cart-desktop__table-col">Количество</th>
+        <th class="cart-desktop__table-header cart-desktop__table-col">Сумма</th>
+        <th></th>
+      </tr>
+      <tr class="cart-desktop__table-row">
+        <td class="cart-desktop__table-col">
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="./img/products-1.jpg" alt="product" width="75" height="75">
+            </div>
+            <div class="product-item__name product-item__name_pre-order">
+              Торт наполеон
+            </div>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="price">
+            <div class="price__top">
+              <span class="price__cost">1150</span>
+              <span class="price__currency">руб.</span>
+            </div>
+            <div class="price__bottom">
+              <span class="price__num-weight">1</span>
+              <span class="price__measure-weight">кг.</span>
+            </div>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="to-cart-mobile section-cart__to-cart-mobile btn-to-cart_desktop">
+            <button class="btn-reset btn-mobile-minus">-</button>
+            <input disabled type="number" class="input-reset num-cart" value="2">
+            <button class="btn-reset btn-mobile-plus">+</button>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="cart-desktop__table-summary">
+            <span class="cart-desktop__table-summary-num">2300</span>
+            <span class="cart-desktop__table-summary-currency">руб.</span>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="menu-close cart-desktop__table-menu-close"></div>
+        </td>
+      </tr>
+      <tr class="cart-desktop__table-row">
+        <td class="cart-desktop__table-col">
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="./img/products-1.jpg" alt="product" width="75" height="75">
+            </div>
+            <div class="product-item__name">
+              Торт наполеон
+            </div>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="price">
+            <div class="price__top">
+              <span class="price__cost">1150</span>
+              <span class="price__currency">руб.</span>
+            </div>
+            <div class="price__bottom">
+              <span class="price__num-weight">1</span>
+              <span class="price__measure-weight">кг.</span>
+            </div>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="to-cart-mobile section-cart__to-cart-mobile btn-to-cart_desktop">
+            <button class="btn-reset btn-mobile-minus">-</button>
+            <input disabled type="number" class="input-reset num-cart" value="2">
+            <button class="btn-reset btn-mobile-plus">+</button>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="cart-desktop__table-summary">
+            <span class="cart-desktop__table-summary-num">2300</span>
+            <span class="cart-desktop__table-summary-currency">руб.</span>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="menu-close cart-desktop__table-menu-close"></div>
+        </td>
+      </tr>
+      <tr class="cart-desktop__table-row">
+        <td class="cart-desktop__table-col">
+          <div class="product-item">
+            <div class="product-item__img">
+              <img src="./img/products-1.jpg" alt="product" width="75" height="75">
+            </div>
+            <div class="product-item__name">
+              Торт наполеон
+            </div>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="price">
+            <div class="price__top">
+              <span class="price__cost">1150</span>
+              <span class="price__currency">руб.</span>
+            </div>
+            <div class="price__bottom">
+              <span class="price__num-weight">1</span>
+              <span class="price__measure-weight">кг.</span>
+            </div>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="to-cart-mobile section-cart__to-cart-mobile btn-to-cart_desktop">
+            <button class="btn-reset btn-mobile-minus">-</button>
+            <input disabled type="number" class="input-reset num-cart" value="2">
+            <button class="btn-reset btn-mobile-plus">+</button>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="cart-desktop__table-summary">
+            <span class="cart-desktop__table-summary-num">2300</span>
+            <span class="cart-desktop__table-summary-currency">руб.</span>
+          </div>
+        </td>
+        <td class="cart-desktop__table-col">
+          <div class="menu-close cart-desktop__table-menu-close"></div>
+        </td>
+      </tr>
+    </table>
+    <div class="cart-desktop__summary">
+      <div class="cart-desktop__summary-left">
+        <div class="cart-desktop__summary-left-top">Итоговая сумма заказа</div>
+        <div class="cart-desktop__summary-left-bottom">Окончательная сумма будет сформирована после сборки заказа</div>
       </div>
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Ручной работы</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
+      <div class="cart-desktop__summary-right">
+        <span class="cart-desktop__summary-cost">4600</span>
+        <span class="cart-desktop__summary-currency">руб.</span>
       </div>
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Ручной</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="mobile-swiper__pagination">
-
     </div>
   </div>
 </section>
@@ -203,17 +275,17 @@
         <div class="section-cart__item-title">Торт наполеон с ягодой</div>
         <div class="section-cart__item-descr">Хрустящие слоеные коржи собственного производства, покрытые сливочно-заварным кремом.</div>
         <div class="section-cart__item-bottom">
-          <div class="section-cart__item-num">Кол-во: <u>3шт</u></div>
+          <!-- <div class="section-cart__item-num">Кол-во: <u>3шт</u></div> -->
+          <div class="section-cart__item-drop">
+            <div class="to-cart-mobile section-cart__to-cart-mobile">
+              <button class="btn-reset btn-mobile-minus">-</button>
+              <input disabled type="number" class="input-reset num-cart" value="3">
+              <button class="btn-reset btn-mobile-plus">+</button>
+            </div>
+          </div>
           <div class="section-cart__item-price">7 900 ₽</div>
         </div>
         <div class="section-cart__item-delete"></div>
-        <div class="section-cart__item-drop">
-          <div class="to-cart-mobile section-cart__to-cart-mobile">
-            <button class="btn-reset btn-mobile-minus">-</button>
-            <input type="number" class="input-reset num-cart" value="1">
-            <button class="btn-reset btn-mobile-plus">+</button>
-          </div>
-        </div>
       </li>
       <li class="section-cart__item">
         <div class="section-cart__item-ico">
@@ -224,17 +296,17 @@
         <div class="section-cart__item-title">Торт наполеон с ягодой</div>
         <div class="section-cart__item-descr">Хрустящие слоеные коржи собственного производства, покрытые сливочно-заварным кремом.</div>
         <div class="section-cart__item-bottom">
-          <div class="section-cart__item-num">Кол-во: <u>3шт</u></div>
+          <!-- <div class="section-cart__item-num">Кол-во: <u>3шт</u></div> -->
+          <div class="section-cart__item-drop">
+            <div class="to-cart-mobile section-cart__to-cart-mobile">
+              <button class="btn-reset btn-mobile-minus">-</button>
+              <input disabled type="number" class="input-reset num-cart" value="3">
+              <button class="btn-reset btn-mobile-plus">+</button>
+            </div>
+          </div>
           <div class="section-cart__item-price">7 900 ₽</div>
         </div>
         <div class="section-cart__item-delete"></div>
-        <div class="section-cart__item-drop">
-          <div class="to-cart-mobile section-cart__to-cart-mobile">
-            <button class="btn-reset btn-mobile-minus">-</button>
-            <input type="number" class="input-reset num-cart" value="1">
-            <button class="btn-reset btn-mobile-plus">+</button>
-          </div>
-        </div>
       </li>
       <li class="section-cart__item">
         <div class="section-cart__item-ico">
@@ -245,41 +317,267 @@
         <div class="section-cart__item-title">Торт наполеон с ягодой</div>
         <div class="section-cart__item-descr">Хрустящие слоеные коржи собственного производства, покрытые сливочно-заварным кремом.</div>
         <div class="section-cart__item-bottom">
-          <div class="section-cart__item-num">Кол-во: <u>3шт</u></div>
+          <!-- <div class="section-cart__item-num">Кол-во: <u>3шт</u></div> -->
+          <div class="section-cart__item-drop">
+            <div class="to-cart-mobile section-cart__to-cart-mobile">
+              <button class="btn-reset btn-mobile-minus">-</button>
+              <input disabled type="number" class="input-reset num-cart" value="3">
+              <button class="btn-reset btn-mobile-plus">+</button>
+            </div>
+          </div>
           <div class="section-cart__item-price">7 900 ₽</div>
         </div>
         <div class="section-cart__item-delete"></div>
-        <div class="section-cart__item-drop">
-          <div class="to-cart-mobile section-cart__to-cart-mobile">
-            <button class="btn-reset btn-mobile-minus">-</button>
-            <input type="number" class="input-reset num-cart" value="1">
-            <button class="btn-reset btn-mobile-plus">+</button>
-          </div>
-        </div>
       </li>
     </ul>
+    <div class="section-cart__summary">
+      <div class="section-cart__summary-top">Итоговая сумма заказа</div>
+      <div class="section-cart__summary-bottom"><span class="section-cart__summary-cost">4600 </span> <span class="section-cart__summary-currency">руб.</span></div>
+    </div>
     <div class="disclaimer section-cart__disclaimer">Окончательная сумма будет сформирована после сборки заказа</div>
+  </div>
+</section>
+
+      <section class="cart-other">
+  <div class="container cart-other__container">
+    <h3 class="title cart-other__title">Что-нибудь еще?</h3>
+    <div class="cart-other__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="products__card cart-other__card">
+            <div class="products__cards-feauters">
+              <span class="products__card-hit cart-other__card-hit">Хит</span>
+              <span class="products__card-new cart-other__card-new">Новинка</span>
+            </div>
+            <div class="products__card-img">
+              <img src="./img/products-1.jpg" alt="cake">
+            </div>
+            <div class="cart-other__card-price">1050 Р</div>
+            <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+            <div class="cart-other__card-weight">1 кг</div>
+            <div class="products__card-controls">
+              <span class="products-mobile__card-price">1050 Р</span>
+              <div class="products__btns">
+
+                <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+                <div class="products__card-cost">
+                  <input  value="0шт" class="products__card-quanity">
+                  <span class="products__card-price">1050 Р</span>
+
+                </div>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="products__card cart-other__card">
+            <div class="products__cards-feauters">
+              <span class="products__card-hit cart-other__card-hit">Хит</span>
+              <span class="products__card-new cart-other__card-new">Новинка</span>
+            </div>
+            <div class="products__card-img">
+              <img src="./img/products-1.jpg" alt="cake">
+            </div>
+            <div class="cart-other__card-price">1050 Р</div>
+            <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+            <div class="cart-other__card-weight">1 кг</div>
+            <div class="products__card-controls">
+              <span class="products-mobile__card-price">1050 Р</span>
+              <div class="products__btns">
+
+                <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small cart-other__btn"><span>В корзину</span></button>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+                <div class="products__card-cost">
+
+                  <input  value="0шт" class="products__card-quanity">
+                  <span class="products__card-price">1050 Р</span>
+                </div>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="products__card cart-other__card">
+            <div class="products__cards-feauters">
+              <span class="products__card-hit cart-other__card-hit">Хит</span>
+              <span class="products__card-new cart-other__card-new">Новинка</span>
+            </div>
+            <div class="products__card-img">
+              <img src="./img/products-1.jpg" alt="cake">
+            </div>
+            <div class="cart-other__card-price">1050 Р</div>
+            <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+            <div class="cart-other__card-weight">1 кг</div>
+            <div class="products__card-controls">
+              <span class="products-mobile__card-price">1050 Р</span>
+              <div class="products__btns">
+
+                <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small cart-other__btn"><span>В корзину</span></button>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+                <div class="products__card-cost">
+
+                  <input  value="0шт" class="products__card-quanity">
+                  <span class="products__card-price">1050 Р</span>
+                </div>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="products__card cart-other__card">
+            <div class="products__cards-feauters">
+              <span class="products__card-hit cart-other__card-hit">Хит</span>
+              <span class="products__card-new cart-other__card-new">Новинка</span>
+            </div>
+            <div class="products__card-img">
+              <img src="./img/products-1.jpg" alt="cake">
+            </div>
+            <div class="cart-other__card-price">1050 Р</div>
+            <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+            <div class="cart-other__card-weight">1 кг</div>
+            <div class="products__card-controls">
+              <span class="products-mobile__card-price">1050 Р</span>
+              <div class="products__btns">
+
+                <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small cart-other__btn"><span>В корзину</span></button>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+                <div class="products__card-cost">
+
+                  <input  value="0шт" class="products__card-quanity">
+                  <span class="products__card-price">1050 Р</span>
+                </div>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="products__card cart-other__card">
+            <div class="products__cards-feauters">
+              <span class="products__card-hit cart-other__card-hit">Хит</span>
+              <span class="products__card-new cart-other__card-new">Новинка</span>
+            </div>
+            <div class="products__card-img">
+              <img src="./img/products-1.jpg" alt="cake">
+            </div>
+            <div class="cart-other__card-price">1050 Р</div>
+            <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+            <div class="cart-other__card-weight">1 кг</div>
+            <div class="products__card-controls">
+              <span class="products-mobile__card-price">1050 Р</span>
+              <div class="products__btns">
+
+                <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small cart-other__btn"><span>В корзину</span></button>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+                <div class="products__card-cost">
+
+                  <input  value="0шт" class="products__card-quanity">
+                  <span class="products__card-price">1050 Р</span>
+                </div>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="products__card cart-other__card">
+            <div class="products__cards-feauters">
+              <span class="products__card-hit cart-other__card-hit">Хит</span>
+              <span class="products__card-new cart-other__card-new">Новинка</span>
+            </div>
+            <div class="products__card-img">
+              <img src="./img/products-1.jpg" alt="cake">
+            </div>
+            <div class="cart-other__card-price">1050 Р</div>
+            <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+            <div class="cart-other__card-weight">1 кг</div>
+            <div class="products__card-controls">
+              <span class="products-mobile__card-price">1050 Р</span>
+              <div class="products__btns">
+
+                <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small cart-other__btn"><span>В корзину</span></button>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+                <div class="products__card-cost">
+
+                  <input  value="0шт" class="products__card-quanity">
+                  <span class="products__card-price">1050 Р</span>
+                </div>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="products__card cart-other__card">
+            <div class="products__cards-feauters">
+              <span class="products__card-hit cart-other__card-hit">Хит</span>
+              <span class="products__card-new cart-other__card-new">Новинка</span>
+            </div>
+            <div class="products__card-img">
+              <img src="./img/products-1.jpg" alt="cake">
+            </div>
+            <div class="cart-other__card-price">1050 Р</div>
+            <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+            <div class="cart-other__card-weight">1 кг</div>
+            <div class="products__card-controls">
+              <span class="products-mobile__card-price">1050 Р</span>
+              <div class="products__btns">
+
+                <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small cart-other__btn"><span>В корзину</span></button>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+                <div class="products__card-cost">
+
+                  <input  value="0шт" class="products__card-quanity">
+                  <span class="products__card-price">1050 Р</span>
+                </div>
+                <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
       <section class="order">
   <div class="container order__conainer">
-    <form action="#" class="form form-mobile" method="GET">
-      <h4 class="form-mobile__title">Оформление заказа</h4>
+    <h4 class="order__title">Оформление заказа</h4>
+    <form action="#" class="form form-mobile order__form" method="GET">
+      <h4 class="form-mobile__title">Данные покупателя</h4>
       <label for="order_name">Имя<sup>*</sup></label>
       <input id="order_name" type="text" name="name" required>
-      <label for="order_surname">Фамилия<sup>*</sup></label>
-      <input id="order_surname" type="text" name="surname" required>
       <label for="order_phone">Телефон<sup>*</sup></label>
       <input id="order_phone" type="phone" name="phone" required>
-      <label for="order_email">E-mail</label>
-      <input id="order_email" type="email" name="email">
+      <h4 class="form-mobile__title">Бонусная карта</h4>
+      <label for="order_bonus">Номер бонусной карты</label>
+      <input id="order_bonus" type="bonus" name="bonus">
       <h4 class="form-mobile__title">Способ получения</h4>
+      <div class="form__radios">
+        <input checked class="form__radio" id="pickup" type="radio" name="receiving" value="pickup">
+        <label class="form__radio-label" for="pickup">Самовывоз из магазина</label>
+        <input class="form__radio" id="deliver" type="radio" name="receiving" value="deliver">
+        <label class="form__radio-label" for="deliver">Доставка <span class="form__mini-mobile-text">(бесплатная доставка до МКАД от 2900 ₽)</span></label>
+      </div>
+
+      <label for="order_date">Дата<sup>*</sup></label>
+      <input id="order_date" type="date" name="date" required>
+
+      <label for="order_pickup_addres">Магазин для самовывоза в городе Москва<sup>*</sup></label>
+      <input id="order_pickup_addres" type="text" name="pickup_addres" required>
+
+      <label for="order_time">Время<sup>*</sup></label>
+      <input id="order_time" type="time" name="time" required>
       <label for="order_addres">Адрес доставки<sup>*</sup></label>
       <input id="order_addres" type="text" name="addres" required>
+
       <label for="order_comment">Комментарий к заказу</label>
       <textarea name="order_comment" id="comment" cols="30" rows="10"></textarea>
-      <button type="submit" class="btn btn-reset btn_color_gradient-shiraz btn-mobile-fw">Оформить заказ</button>
+      <button type="submit" class="btn btn-reset btn_color_gradient-shiraz order__btn btn-mobile-fw">Оформить заказ</button>
     </form>
   </div>
 </section>
@@ -313,6 +611,7 @@
         <div class="footer-mobile__icon">
           <img src="./img/svg/footer-mobile-3.svg" width="19" height="19" alt="icon">
         </div>
+        <span class="cart__num-products footer-mobile__cart">0</span>
         <div class="footer-mobile__name">Корзина</div>
       </li></a>
       <li class="footer-mobile__item burger">

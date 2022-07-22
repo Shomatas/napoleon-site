@@ -32,7 +32,7 @@
     <nav class="nav header__nav">
       <ul class="nav__list list-reset">
         <li class="nav__item drop-down">
-          <a class="link nav__link" href="#">О нас</a>
+          <a class="link nav__link" href="about.html">О нас</a>
           <div class="drop-down__wrapper">
             <ul class="drop-down__list list-reset">
               <li class="drop-down__item"><a href="#" class="drop-down__link link">Текст 1</a></li>
@@ -81,15 +81,13 @@
     </nav>
     <div class="header__right">
       <a class="link" href="#">
-      <div class="phone header__phone">
+      <div class="phone phone_inline header__phone">
         +7 929 657-57-77
-        <div class="phone__call">
-          Перезвонить вам?
-        </div>
       </div></a>
-      <a class="link link_flex" href="#">
+      <a class="link link_flex" href="cart.html">
       <div class="cart header__cart">
         Корзина
+        <span class="cart__num-products">0</span>
       </div></a>
     </div>
   </div>
@@ -110,80 +108,61 @@
 </section>
 
     <main class="main">
+
       <section class="hero">
   <div class="container hero__container">
-    <div class="hero__left">
-      <h2 class="title title_color_shiraz title_size_medium hero__title">
-        Знакомьтесь, главный человек проекта «Особенный Наполеон»
-      </h2>
-      <p class="descr descr_size_large hero__descr">Шеф-кондитер, Татьяна Варламова. Именно она отвечает своим лицом и репутацией за качество тортов!</p>
-      <a class="link" href="#"><button class="btn btn-reset btn_color_gradient-shiraz">О шеф-кондитере</button></a>
-    </div>
-    <div class="hero__slider">
-      <div class="hero__swiper">
-        <div class="swiper-wrapper hero__swiper-wrapper">
-          <div class="swiper-slide hero__swiper-slide">
-            <img src="./img/hero-1.jpg" alt="slide-1">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-2.jpg" alt="slide-2">
-
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-3.jpg" alt="slide-3">
-
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-4.jpg" alt="slide-4">
-
-          </div>
+    <div class="hero__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/ban.jpg" alt="hero">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/ban.jpg" alt="hero">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/ban.jpg" alt="hero">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/ban.jpg" alt="hero">
         </div>
       </div>
       <div class="hero__controls">
-        <span class="hero__slide-prev"></span>
-        <span class="hero__first">01</span>
-        <div class="hero__pagination"></div>
-        <span class="hero__last">04</span>
-        <span class="hero__slide-next"></span>
+        <div class="swiper-pagination dynamic-pagination hero__pagination">
+
+        </div>
       </div>
     </div>
-    <!-- <div class="social hero__social"> -->
-      <!-- <div class="social__begin"></div> -->
-      <!-- <div class="social__whatsapp">
-        <a href="#">
-          <svg class="social__item" width="40" height="40">
-            <use xlink:href="./img/svg/whatsapp.svg#pic"></use>
-          </svg>
-        </a>
-      </div> -->
-    <!-- </div> -->
   </div>
 </section>
 
       <section class="hero-mobile">
-  <div class="mobile-swiper hero__mobile-swiper">
-    <div class="swiper-wrapper mobile-swiper__wrapper">
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Натуральные торты ручной работы</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
+  <div class="container hero-mobile__container">
+    <div class="hero-mobile__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/hero-mobile.jpg" alt="hero" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/hero-mobile.jpg" alt="hero" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/hero-mobile.jpg" alt="hero" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/hero-mobile.jpg" alt="hero" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/hero-mobile.jpg" alt="hero" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/hero-mobile.jpg" alt="hero" width="100%">
         </div>
       </div>
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Ручной работы</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
-      </div>
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Ручной</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="mobile-swiper__pagination">
+      <div class="hero-mobile__controls">
+        <div class="dynamic-pagination-mobile">
 
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -217,6 +196,114 @@
           <span class="stories__new">Новое</span>
         </div>
         <div class="stories__name">Шеф-кондитер</div>
+      </div>
+    </div>
+  </div>
+  <div class="stories-slider">
+    <div class="stories-slider__swiper">
+      <div class="stories-slider__close"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="stories__timeline">
+
+          </div>
+
+          <div class="stories-slider__content-wrapper">
+            <img class="stories-slider__content" src="./img/stories-1.jpg" alt="stories">
+          </div>
+          <!-- <div class="stories-slider__content-wrapper">
+            <img class="stories-slider__content" src="./img/stories-3.jpg" alt="stories">
+          </div> -->
+          <div class="stories-slider__content-wrapper">
+            <video class="stories-slider__content" src="./video/pancake.mp4" alt="stories" preload="metadata">
+          </div>
+          <!-- <div class="stories-slider__content-wrapper">
+            <img class="stories-slider__content" src="./img/stories-4.jpg" alt="stories">
+          </div> -->
+        </div>
+        <div class="swiper-slide">
+          <div class="stories__timeline">
+
+          </div>
+          <img class="stories-slider__content" src="./img/stories-4.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-1.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-2.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-3.jpg" alt="stories">
+        </div>
+        <div class="swiper-slide">
+          <div class="stories__timeline">
+
+          </div>
+          <img class="stories-slider__content" src="./img/stories-3.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-4.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-1.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-2.jpg" alt="stories">
+        </div>
+        <div  class="swiper-slide">
+          <div class="stories__timeline">
+
+          </div>
+          <img class="stories-slider__content" src="./img/stories-4.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-1.jpg" alt="stories">
+          <img class="stories-slider__content" src="./img/stories-2.jpg" alt="stories">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="catalog">
+  <div class="container catalog__container">
+    <div class="mobile-swiper catalog__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#"><div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="./img/catalog-1.jpg" alt="catalog">
+            </div>
+            <h5 class="catalog__card-title">Наполеон</h5>
+          </div></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="./img/catalog-2.jpg" alt="catalog">
+            </div>
+            <h5 class="catalog__card-title">Медовик</h5>
+          </div></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="./img/catalog-3.jpg" alt="catalog">
+            </div>
+            <h5 class="catalog__card-title">Десерты</h5>
+          </div></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="./img/catalog-4.jpg" alt="catalog">
+            </div>
+            <h5 class="catalog__card-title">Эклеры</h5>
+          </div></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="./img/catalog-5.jpg" alt="catalog">
+            </div>
+            <h5 class="catalog__card-title">Эклеры без сахара</h5>
+          </div></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="./img/catalog-6.jpg" alt="catalog">
+            </div>
+            <h5 class="catalog__card-title">Половинки</h5>
+          </div></a>
+        </div>
       </div>
     </div>
   </div>
@@ -272,7 +359,7 @@
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
             </div> -->
 
-            <button class="btn btn-preorder btn-fw-a">Предзаказ</button>
+            <button class="btn btn-preorder btn-fw-a btn_size_small">Предзаказ</button>
           </div>
         </div>
         <div class="products__card">
@@ -342,24 +429,7 @@
               </div>
             </div>
             <span class="products-mobile__card-price">1050 Р</span>
-            <div class="products__select-wrapper">
-              <select name="weight3" id="weight" class="products__card-weight">
-                <option value="0.6">0.6 кг</option>
-                <option value="1.0" selected>1 кг</option>
-                <option value="2.0">2 кг</option>
-              </select>
-            </div>
-            <div class="products__btns">
-
-              <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
-              <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
-              <div class="products__card-cost">
-
-                <input  value="0шт" class="products__card-quanity">
-                <span class="products__card-price">1050 Р</span>
-              </div>
-              <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
-            </div>
+            <button class="btn btn-preorder btn-preorder__time btn-fw-a btn_size_small">Предзаказ <span>за 24 часа</span></button>
           </div>
         </div>
         <div class="products__card">
@@ -583,8 +653,38 @@
           </div>
         </div>
       </div>
+      <ul class="products-advantages list-reset">
+        <li class="products-advantages__item">
+          <div class="products-advantages__item-ico">
+            <img src="./img/svg/advantages-1.svg" alt="advantage">
+          </div>
+          <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+          <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+        </li>
+        <li class="products-advantages__item">
+          <div class="products-advantages__item-ico">
+            <img src="./img/svg/advantages-1.svg" alt="advantage">
+          </div>
+          <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+          <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+        </li>
+        <li class="products-advantages__item">
+          <div class="products-advantages__item-ico">
+            <img src="./img/svg/advantages-1.svg" alt="advantage">
+          </div>
+          <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+          <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+        </li>
+        <li class="products-advantages__item">
+          <div class="products-advantages__item-ico">
+            <img src="./img/svg/advantages-1.svg" alt="advantage">
+          </div>
+          <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+          <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+        </li>
+      </ul>
 
-      <a class="link" href="catalog.html"><button class="btn btn-reset btn_transparent-shiraz products__btn-catalog btn-fw btn-transit">Перейти в каталог</button></a>
+      <!-- <a class="link" href="catalog.html"><button class="btn btn-reset btn_transparent-shiraz products__btn-catalog btn-fw btn-transit">Перейти в каталог</button></a> -->
     </div>
 
     <h1 class="title products__cards-title">Медовик</h1>
@@ -625,7 +725,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -670,7 +770,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -712,7 +812,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -757,7 +857,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -799,7 +899,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -841,7 +941,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -887,7 +987,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -932,7 +1032,7 @@
           </div>
           <div class="products__btns">
 
-            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+            <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small "><span>В корзину</span> <strong>1050 Р</strong></button>
             <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
             <div class="products__card-cost">
 
@@ -944,8 +1044,38 @@
         </div>
       </div>
     </div>
+    <ul class="products-advantages list-reset">
+      <li class="products-advantages__item">
+        <div class="products-advantages__item-ico">
+          <img src="./img/svg/advantages-1.svg" alt="advantage">
+        </div>
+        <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+        <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+      </li>
+      <li class="products-advantages__item">
+        <div class="products-advantages__item-ico">
+          <img src="./img/svg/advantages-1.svg" alt="advantage">
+        </div>
+        <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+        <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+      </li>
+      <li class="products-advantages__item">
+        <div class="products-advantages__item-ico">
+          <img src="./img/svg/advantages-1.svg" alt="advantage">
+        </div>
+        <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+        <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+      </li>
+      <li class="products-advantages__item">
+        <div class="products-advantages__item-ico">
+          <img src="./img/svg/advantages-1.svg" alt="advantage">
+        </div>
+        <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+        <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+      </li>
+    </ul>
 
-    <a class="link" href="catalog.html"><button class="btn btn-reset btn_transparent-shiraz products__btn-catalog btn-fw btn-transit">Перейти в каталог</button></a>
+    <!-- <a class="link" href="catalog.html"><button class="btn btn-reset btn_transparent-shiraz products__btn-catalog btn-fw btn-transit">Перейти в каталог</button></a> -->
   </div>
 
   <h1 class="title products__cards-title">Эклеры</h1>
@@ -1305,94 +1435,124 @@
       </div>
     </div>
   </div>
+  <ul class="products-advantages list-reset">
+    <li class="products-advantages__item">
+      <div class="products-advantages__item-ico">
+        <img src="./img/svg/advantages-1.svg" alt="advantage">
+      </div>
+      <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+      <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+    </li>
+    <li class="products-advantages__item">
+      <div class="products-advantages__item-ico">
+        <img src="./img/svg/advantages-1.svg" alt="advantage">
+      </div>
+      <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+      <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+    </li>
+    <li class="products-advantages__item">
+      <div class="products-advantages__item-ico">
+        <img src="./img/svg/advantages-1.svg" alt="advantage">
+      </div>
+      <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+      <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+    </li>
+    <li class="products-advantages__item">
+      <div class="products-advantages__item-ico">
+        <img src="./img/svg/advantages-1.svg" alt="advantage">
+      </div>
+      <h4 class="products-advantages__item-title title title_size_list">Бережное отношение</h4>
+      <p class="products-advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+    </li>
+  </ul>
 
-  <a class="link" href="catalog.html"><button class="btn btn-reset btn_transparent-shiraz products__btn-catalog btn-fw btn-transit">Перейти в каталог</button></a>
+  <!-- <a class="link" href="catalog.html"><button class="btn btn-reset btn_transparent-shiraz products__btn-catalog btn-fw btn-transit">Перейти в каталог</button></a> -->
 </div>
   </div>
 </section>
 
       <section class="advantages">
   <div class="container advantages__container">
-    <ul class="advantages__list list-reset">
+    <!-- <ul class="advantages__list list-reset">
       <li class="advantages__item">
         <div class="advantages__item-ico">
           <img src="./img/svg/advantages-1.svg" alt="advantage">
         </div>
         <h4 class="advantages__item-title title title_size_list">Бережное отношение</h4>
-        <p class="advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
+        <p class="advantages__item-descr descr">Мы заботимся об экологичности и сохранности продуктов на всех этапах работы</p>
       </li>
       <li class="advantages__item">
         <div class="advantages__item-ico">
           <img src="./img/svg/advantages-2.svg" alt="advantage">
         </div>
-        <h4 class="advantages__item-title title title_size_list">Любой вкус и аромат</h4>
-        <p class="advantages__item-descr descr">Большой ассортимент тортов для всех — от садкоежек до настоящего гурмана</p>
+        <h4 class="advantages__item-title title title_size_list">Любой вкус и аромат</h4>
+        <p class="advantages__item-descr descr">Большой ассортимент тортов для всех - от садкоежек до настоящего гурмана</p>
       </li>
       <li class="advantages__item">
         <div class="advantages__item-ico">
           <img src="./img/svg/advantages-3.svg" alt="advantage">
         </div>
         <h4 class="advantages__item-title title title_size_list">Сертификаты качества</h4>
-        <p class="advantages__item-descr descr">Вы можете ознакомиться со всеми сертификатами качества и соответствия наших продуктов</p>
+        <p class="advantages__item-descr descr">Вы можете ознакомиться со всеми сертификатами качества и соответствия наших продуктов</p>
       </li>
       <li class="advantages__item">
         <div class="advantages__item-ico">
           <img src="./img/svg/advantages-4.svg" alt="advantage">
         </div>
         <h4 class="advantages__item-title title title_size_list">Бабушкины рецепты</h4>
-        <p class="advantages__item-descr descr">Мы собрали самые потайные секреты наших бабушек и получили идеальные рецепты тортов</p>
+        <p class="advantages__item-descr descr">Мы собрали самые  потайные секреты наших бабушек и получили идеальные рецепты тортов</p>
       </li>
       <li class="advantages__item">
         <div class="advantages__item-ico">
           <img src="./img/svg/advantages-5.svg" alt="advantage">
         </div>
         <h4 class="advantages__item-title title title_size_list">Только натуральное</h4>
-        <p class="advantages__item-descr descr">Мы хотим радовать вкусной выпечкой при этом не используем ароматизаторы и усилители вкуса</p>
+        <p class="advantages__item-descr descr">Мы хотим радовать вкусной выпечкой при этом не используем ароматизаторы и усилители вкуса</p>
       </li>
       <li class="advantages__item">
         <div class="advantages__item-ico">
           <img src="./img/svg/advantages-6.svg" alt="advantage">
         </div>
         <h4 class="advantages__item-title title title_size_list">Авторское выполнение</h4>
-        <p class="advantages__item-descr descr">У каждого торта есть кусочек души наших пекарей, ведь они готовят их вручную</p>
+        <p class="advantages__item-descr descr">У каждого торта есть кусочек души наших пекарей, ведь они готовят их вручную</p>
       </li>
-    </ul>
+    </ul> -->
     <div class="explanation">
-      <div class="explanation__left">
-        <h4 class="title title_color_shiraz title_size_list explanation__title">Где и как мы работаем?</h4>
-        <p class="descr">После просмотра видео вы узнаете: как мы создаем наши торты, кто делает нашу выпечку
+      <!-- <div class="explanation__left"> -->
+        <h4 class="title explanation__title">Где и как мы работаем?</h4>
+        <p class="descr explanation__descr">После просмотра видео вы узнаете: как мы создаем наши торты, кто делает нашу выпечку
 такой вкусной и где находится наш магаин.</p>
         <div class="explanation__video">
           <img src="./img/video.jpg" alt="cake" class="explanation__video-img">
           <video src="./video/cake.mp4" class="explanation__video-content" preload="meta" width="100%" height="100%" controls></video>
           <button class="explanation__play btn-reset"></button>
         </div>
-      </div>
+      <!-- </div> -->
 
-      <div class="explanation__right">
+      <!-- <div class="explanation__right">
         <ul class="explantion__list list-reset">
           <li class="explanation__item">
             <h4 class="title title_color_shiraz title_size_list">Заказ</h4>
-            <p class="descr">Вы оставляете заявку и наш менеджер свяжется с вами, чтобы обговорить детали: удобное для вас время доставки, предпочтения по вкусу</p>
+            <p class="descr">Вы оставляете заявку и наш менеджер свяжется с вами, чтобы обговорить детали: удобное для вас время доставки, предпочтения по вкусу</p>
           </li>
           <li class="explanation__item">
             <h4 class="title title_color_shiraz title_size_list">Оплата</h4>
-            <p class="descr">Вы выбираете, когда оплачивать и как оплачивать заказ. Мы предоставляем оплату через терминал, оплату наличными или оплату на сайте</p>
+            <p class="descr">Вы выбираете, когда оплачивать и как оплачивать заказ. Мы предоставляем оплату через терминал, оплату наличными или оплату на сайте</p>
           </li>
           <li class="explanation__item">
             <h4 class="title title_color_shiraz title_size_list">Доставка</h4>
-            <p class="descr">Доставка осуществляется курьером по Москве
-и Московской области с 9:00 до 21:00. Либо вы
-можете сами забрать заказ с нашего магазина</p>
+            <p class="descr">Доставка осуществляется курьером по Москве
+и Московской области с 9:00 до 21:00. Либо вы
+можете сами забрать заказ с нашего магазина</p>
           </li>
           <li class="explanation__item">
             <h4 class="title title_color_shiraz title_size_list">Упаквока</h4>
-            <p class="descr">Мы используем удобную и быстроразлагаемую
+            <p class="descr">Мы используем удобную и быстроразлагаемую
 упаковку. Также есть возможность оформить
-подарочную упаковку, открытку и букет цветов</p>
+подарочную упаковку, открытку и букет цветов</p>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -1433,6 +1593,9 @@
       <div class="swiper-wrapper reviews__swiper-wrapper">
         <div class="swiper-slide">
           <div class="reviews__item">
+            <div class="reviews__item-img">
+              <img src="./img/review-1.jpg" alt="review" width="100%" height="100%">
+            </div>
             <div class="reviews__item-top">
               <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
               <div class="reviews__date">19.04.2021</div>
@@ -1446,6 +1609,9 @@
         </div>
         <div class="swiper-slide">
           <div class="reviews__item">
+            <div class="reviews__item-img">
+              <img src="./img/review-2.jpg" alt="review" width="100%" height="100%">
+            </div>
             <div class="reviews__item-top">
               <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
               <div class="reviews__date">19.04.2021</div>
@@ -1459,6 +1625,9 @@
         </div>
         <div class="swiper-slide">
           <div class="reviews__item">
+            <div class="reviews__item-img">
+              <img src="./img/review-3.jpg" alt="review" width="100%" height="100%">
+            </div>
             <div class="reviews__item-top">
               <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
               <div class="reviews__date">19.04.2021</div>
@@ -1472,6 +1641,9 @@
         </div>
         <div class="swiper-slide">
           <div class="reviews__item">
+            <div class="reviews__item-img">
+              <img src="./img/review-3.jpg" alt="review" width="100%" height="100%">
+            </div>
             <div class="reviews__item-top">
               <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
               <div class="reviews__date">19.04.2021</div>
@@ -1485,175 +1657,9 @@
         </div>
         <div class="swiper-slide">
           <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
+            <div class="reviews__item-img">
+              <img src="./img/review-3.jpg" alt="review" width="100%" height="100%">
             </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
-            <div class="reviews__item-top">
-              <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
-              <div class="reviews__date">19.04.2021</div>
-            </div>
-            <p class="descr descr_size_small reviews__descr">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-прекрасно, особенно порадовал эклер с ежевикой. </p>
-            <p class="descr descr_size_small reviews__descr">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-с сладости с данного мгазина.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews__item">
             <div class="reviews__item-top">
               <h5 class="title title_font_rubik title_size_esmall review__item-title">Иван Иванов</h5>
               <div class="reviews__date">19.04.2021</div>
@@ -1668,75 +1674,28 @@
 
       </div>
       <div class="reviews__controls">
-        <div class="reviews__prev">
-          <div class="arrow-left"></div>
-        </div>
-        <div class="reviews__pagination">
+        <div class="reviews__pagination dynamic-pagination">
 
         </div>
-        <div class="reviews__next">
-          <div class="arrow-right"></div>
+        <div class="hero-mobile__controls">
+          <div class="dynamic-pagination-mobile">
+
+          </div>
         </div>
-      </div>
-      <div class="mobile-swiper__pagination">
-
-      </div>
-    </div>
-  </div>
-</section>
-
-      <section class="blog">
-  <div class="container blog__container">
-    <h1 class="title blog__title">Наш блог</h1>
-    <div class="mobile-swiper blog__swiper">
-      <div class="swiper-wrapper">
-
-        <a href="#"><div class="swiper-slide">
-          <div class="blog__card-img">
-            <img src="./img/blog.jpg" alt="blog">
-          </div>
-          <h6 class="blog__card-title title title_size_eesmall">Новые вкусы леденцов в США</h6>
-        </div></a>
-        <a href="#"><div class="swiper-slide">
-          <div class="blog__card-img">
-            <img src="./img/blog.jpg" alt="blog">
-          </div>
-          <h6 class="blog__card-title title title_size_eesmall">Новые вкусы леденцов в США</h6>
-        </div></a>
-        <a href="#"><div class="swiper-slide">
-          <div class="blog__card-img">
-            <img src="./img/blog.jpg" alt="blog">
-          </div>
-          <h6 class="blog__card-title title title_size_eesmall">Новые вкусы леденцов в США</h6>
-        </div></a>
-        <a href="#"><div class="swiper-slide">
-          <div class="blog__card-img">
-            <img src="./img/blog.jpg" alt="blog">
-          </div>
-          <h6 class="blog__card-title title title_size_eesmall">Новые вкусы леденцов в США</h6>
-        </div></a>
-        <a href="#"><div class="swiper-slide">
-          <div class="blog__card-img">
-            <img src="./img/blog.jpg" alt="blog">
-          </div>
-          <h6 class="blog__card-title title title_size_eesmall">Новые вкусы леденцов в США</h6>
-        </div></a>
-        <a href="#"><div class="swiper-slide">
-          <div class="blog__card-img">
-            <img src="./img/blog.jpg" alt="blog">
-          </div>
-          <h6 class="blog__card-title title title_size_eesmall">Новые вкусы леденцов в США</h6>
-        </div></a>
-      </div>
-
-      <div class="mobile-swiper__pagination">
-
       </div>
     </div>
   </div>
 </section>
 
     </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__copyright">© Особенный наполеон, 2021 — 2022</div>
+    <a class="link" href="#"><span class="footer__agreement">Соглашение на обработку персональных данных</span></a>
+    <a class="link" href="#"><span class="footer__policy">Политика конфиденциальности</span></a>
+  </div>
+</footer>
 
     <section class="footer-mobile">
   <div class="container footer-mobile__container">
@@ -1757,6 +1716,7 @@
         <div class="footer-mobile__icon">
           <img src="./img/svg/footer-mobile-3.svg" width="19" height="19" alt="icon">
         </div>
+        <span class="cart__num-products footer-mobile__cart">0</span>
         <div class="footer-mobile__name">Корзина</div>
       </li></a>
       <li class="footer-mobile__item burger">
@@ -1845,6 +1805,20 @@
         </a>
       </div>
     </div>
+  </div>
+</div>
+
+    <div class="modal modal-location">
+  <div class="modal__content">
+    <div class="menu-close modal__menu-close"></div>
+    <div class="modal__title">Выберите ваш город</div>
+    <ul class="modal__list list-reset">
+      <li class="modal__item"><a class="link link-hover" href="#">Москва</a></li>
+      <li class="modal__item"><a class="link link-hover" href="#">Казань</a></li>
+      <li class="modal__item"><a class="link link-hover" href="#">Санкт-Петербург</a></li>
+      <li class="modal__item"><a class="link link-hover" href="#">Тверь</a></li>
+      <li class="modal__item"><a class="link link-hover" href="#">Ярославль</a></li>
+    </ul>
   </div>
 </div>
 

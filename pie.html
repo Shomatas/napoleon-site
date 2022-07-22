@@ -32,7 +32,7 @@
     <nav class="nav header__nav">
       <ul class="nav__list list-reset">
         <li class="nav__item drop-down">
-          <a class="link nav__link" href="#">О нас</a>
+          <a class="link nav__link" href="about.html">О нас</a>
           <div class="drop-down__wrapper">
             <ul class="drop-down__list list-reset">
               <li class="drop-down__item"><a href="#" class="drop-down__link link">Текст 1</a></li>
@@ -81,15 +81,13 @@
     </nav>
     <div class="header__right">
       <a class="link" href="#">
-      <div class="phone header__phone">
+      <div class="phone phone_inline header__phone">
         +7 929 657-57-77
-        <div class="phone__call">
-          Перезвонить вам?
-        </div>
       </div></a>
-      <a class="link link_flex" href="#">
+      <a class="link link_flex" href="cart.html">
       <div class="cart header__cart">
         Корзина
+        <span class="cart__num-products">0</span>
       </div></a>
     </div>
   </div>
@@ -110,83 +108,6 @@
 </section>
 
     <main class="main">
-      <section class="hero">
-  <div class="container hero__container">
-    <div class="hero__left">
-      <h2 class="title title_color_shiraz title_size_medium hero__title">
-        Знакомьтесь, главный человек проекта «Особенный Наполеон»
-      </h2>
-      <p class="descr descr_size_large hero__descr">Шеф-кондитер, Татьяна Варламова. Именно она отвечает своим лицом и репутацией за качество тортов!</p>
-      <a class="link" href="#"><button class="btn btn-reset btn_color_gradient-shiraz">О шеф-кондитере</button></a>
-    </div>
-    <div class="hero__slider">
-      <div class="hero__swiper">
-        <div class="swiper-wrapper hero__swiper-wrapper">
-          <div class="swiper-slide hero__swiper-slide">
-            <img src="./img/hero-1.jpg" alt="slide-1">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-2.jpg" alt="slide-2">
-
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-3.jpg" alt="slide-3">
-
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/hero-4.jpg" alt="slide-4">
-
-          </div>
-        </div>
-      </div>
-      <div class="hero__controls">
-        <span class="hero__slide-prev"></span>
-        <span class="hero__first">01</span>
-        <div class="hero__pagination"></div>
-        <span class="hero__last">04</span>
-        <span class="hero__slide-next"></span>
-      </div>
-    </div>
-    <!-- <div class="social hero__social"> -->
-      <!-- <div class="social__begin"></div> -->
-      <!-- <div class="social__whatsapp">
-        <a href="#">
-          <svg class="social__item" width="40" height="40">
-            <use xlink:href="./img/svg/whatsapp.svg#pic"></use>
-          </svg>
-        </a>
-      </div> -->
-    <!-- </div> -->
-  </div>
-</section>
-
-      <section class="hero-mobile">
-  <div class="mobile-swiper hero__mobile-swiper">
-    <div class="swiper-wrapper mobile-swiper__wrapper">
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Натуральные торты ручной работы</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
-      </div>
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Ручной работы</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
-      </div>
-      <div class="swiper-slide hero-mobile__swiper-slide">
-        <h1 class="title title_stroke_white title_color_shiraz hero-mobile__swiper-title">Ручной</h1>
-        <div class="mobile-swiper__img">
-          <img src="./img/hero-mobile-1.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="mobile-swiper__pagination">
-
-    </div>
-  </div>
-</section>
 
       <section class="crumbs">
   <div class="container crumbs__container">
@@ -231,6 +152,11 @@
             <img src="./img/products-1.jpg" alt="pie" width="100%" height="100%">
           </div>
         </div>
+        <div class="swiper-slide pie__slide">
+          <div class="pie-img">
+            <img src="./img/products-1.jpg" alt="pie" width="100%" height="100%">
+          </div>
+        </div>
       </div>
       <div class="pie__controls">
         <div class="pie__control pie__control_active"><img src="./img/products-1.jpg" alt="pie" height="40" width="40"></div>
@@ -240,8 +166,11 @@
         <div class="pie__control"><img src="./img/products-1.jpg" alt="pie" height="40" width="40"></div>
         <div class="pie__control"><img src="./img/products-1.jpg" alt="pie" height="40" width="40"></div>
       </div>
-      <div class="mobile-swiper__pagination pie__pagination">
+      <div class="pie__pagination">
 
+        <div class="dynamic-pagination-mobile">
+
+        </div>
       </div>
     </div>
     <div class="pie__description">
@@ -332,7 +261,7 @@
         </div>
         <div class="to-cart-mobile">
           <button class="btn-reset btn-mobile-minus">-</button>
-          <input type="number" class="input-reset num-cart" value="1">
+          <input disabled type="number" class="input-reset num-cart" value="1">
           <button class="btn-reset btn-mobile-plus">+</button>
           <button class="btn btn-reset btn-mobile-cart"><span>В корзину</span><strong>1050 Р</strong></button>
         </div>
@@ -387,231 +316,176 @@
     </div>
     <div class="products__cards-wrapper">
       <div class="products__cards also-products__cards">
-        <div id="recomend" class="products__card also-products__card">
+        <div id="recomend" class="products__card cart-other__card">
           <div class="products__cards-feauters">
-            <span class="products__card-hit">Хит</span>
-            <span class="products__card-new">Новинка</span>
+            <span class="products__card-hit cart-other__card-hit">Хит</span>
+            <span class="products__card-new cart-other__card-new">Новинка</span>
           </div>
           <div class="products__card-img">
             <img src="./img/products-1.jpg" alt="cake">
           </div>
-          <h3 class="title title_size_small title_color_shiraz products__card-title">Наполеон с ягодой</h3>
-          <p class="descr descr_size_product">Готовим из слоеного теста с ванильно-сливочным заварным кремом с мороженым пломбир и украшаем свежей ягодой.</p>
+          <div class="cart-other__card-price">1050 Р</div>
+          <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+          <div class="cart-other__card-weight">1 кг</div>
           <div class="products__card-controls">
-            <div class="products-mobile__select-wrapper">
-              <div class="products-mobile__select-item">
-                <input name="weight1" id="small1" type="radio" class="products-mobile__select-radio">
-                <label for="small1" class="products-mobile__select-label">0.6 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight1" checked id="medium1" type="radio" class="products-mobile__select-radio">
-                <label for="medium1" class="products-mobile__select-label">1 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight1" id="large1" type="radio" class="products-mobile__select-radio">
-                <label for="large1" class="products-mobile__select-label">2 кг</label>
-              </div>
-            </div>
-            <span class="products-mobile__card-price">1050 Р</span>
-            <div class="products__select-wrapper">
-              <select name="weight1" id="weight" class="products__card-weight">
-                <option value="0.6">0.6 кг</option>
-                <option value="1.0" selected>1 кг</option>
-                <option value="2.0">2 кг</option>
-              </select>
-            </div>
             <div class="products__btns">
 
-              <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+              <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
               <div class="products__card-cost">
-
                 <input  value="0шт" class="products__card-quanity">
                 <span class="products__card-price">1050 Р</span>
+
               </div>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
             </div>
           </div>
         </div>
-        <div id="gingerbreads" class="products__card also-products__card">
+        <div id="recomend" class="products__card cart-other__card">
           <div class="products__cards-feauters">
-            <span class="products__card-hit">Хит</span>
-            <span class="products__card-new">Новинка</span>
+            <span class="products__card-hit cart-other__card-hit">Хит</span>
+            <span class="products__card-new cart-other__card-new">Новинка</span>
           </div>
           <div class="products__card-img">
             <img src="./img/products-1.jpg" alt="cake">
           </div>
-          <h3 class="title title_size_small title_color_shiraz products__card-title">Наполеон с ягодой</h3>
-          <p class="descr descr_size_product">Готовим из слоеного теста с ванильно-сливочным заварным кремом с мороженым пломбир и украшаем свежей ягодой.</p>
+          <div class="cart-other__card-price">1050 Р</div>
+          <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+          <div class="cart-other__card-weight">1 кг</div>
           <div class="products__card-controls">
-            <div class="products-mobile__select-wrapper">
-              <div class="products-mobile__select-item">
-                <input name="weight2" id="small2" type="radio" class="products-mobile__select-radio">
-                <label for="small2" class="products-mobile__select-label">0.6 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight2" checked id="medium2" type="radio" class="products-mobile__select-radio">
-                <label for="medium2" class="products-mobile__select-label">1 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight2" id="large2" type="radio" class="products-mobile__select-radio">
-                <label for="large2" class="products-mobile__select-label">2 кг</label>
-              </div>
-            </div>
-            <span class="products-mobile__card-price">1050 Р</span>
-            <div class="products__select-wrapper">
-              <select name="weight2" id="weight" class="products__card-weight">
-                <option value="0.6">0.6 кг</option>
-                <option value="1.0" selected>1 кг</option>
-                <option value="2.0">2 кг</option>
-              </select>
-            </div>
             <div class="products__btns">
 
-              <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+              <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
               <div class="products__card-cost">
-
                 <input  value="0шт" class="products__card-quanity">
                 <span class="products__card-price">1050 Р</span>
+
               </div>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
             </div>
           </div>
         </div>
-        <div id="candles" class="products__card also-products__card">
+        <div id="recomend" class="products__card cart-other__card">
           <div class="products__cards-feauters">
-            <span class="products__card-hit">Хит</span>
-            <span class="products__card-new">Новинка</span>
+            <span class="products__card-hit cart-other__card-hit">Хит</span>
+            <span class="products__card-new cart-other__card-new">Новинка</span>
           </div>
           <div class="products__card-img">
             <img src="./img/products-1.jpg" alt="cake">
           </div>
-          <h3 class="title title_size_small title_color_shiraz products__card-title">Наполеон с ягодой</h3>
-          <p class="descr descr_size_product">Готовим из слоеного теста с ванильно-сливочным заварным кремом с мороженым пломбир и украшаем свежей ягодой.</p>
+          <div class="cart-other__card-price">1050 Р</div>
+          <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+          <div class="cart-other__card-weight">1 кг</div>
           <div class="products__card-controls">
-            <div class="products-mobile__select-wrapper">
-              <div class="products-mobile__select-item">
-                <input name="weight3" id="small3" type="radio" class="products-mobile__select-radio">
-                <label for="small3" class="products-mobile__select-label">0.6 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight3" checked id="medium3" type="radio" class="products-mobile__select-radio">
-                <label for="medium3" class="products-mobile__select-label">1 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight3" id="large3" type="radio" class="products-mobile__select-radio">
-                <label for="large3" class="products-mobile__select-label">2 кг</label>
-              </div>
-            </div>
-            <span class="products-mobile__card-price">1050 Р</span>
-            <div class="products__select-wrapper">
-              <select name="weight3" id="weight" class="products__card-weight">
-                <option value="0.6">0.6 кг</option>
-                <option value="1.0" selected>1 кг</option>
-                <option value="2.0">2 кг</option>
-              </select>
-            </div>
             <div class="products__btns">
 
-              <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+              <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
               <div class="products__card-cost">
-
                 <input  value="0шт" class="products__card-quanity">
                 <span class="products__card-price">1050 Р</span>
+
               </div>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
             </div>
           </div>
         </div>
-        <div id="inscriptions" class="products__card also-products__card">
+        <div id="recomend" class="products__card cart-other__card">
           <div class="products__cards-feauters">
-            <span class="products__card-hit">Хит</span>
-            <span class="products__card-new">Новинка</span>
+            <span class="products__card-hit cart-other__card-hit">Хит</span>
+            <span class="products__card-new cart-other__card-new">Новинка</span>
           </div>
           <div class="products__card-img">
             <img src="./img/products-1.jpg" alt="cake">
           </div>
-          <h3 class="title title_size_small title_color_shiraz products__card-title">Наполеон с ягодой</h3>
-          <p class="descr descr_size_product">Готовим из слоеного теста с ванильно-сливочным заварным кремом с мороженым пломбир и украшаем свежей ягодой.</p>
+          <div class="cart-other__card-price">1050 Р</div>
+          <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+          <div class="cart-other__card-weight">1 кг</div>
           <div class="products__card-controls">
-            <div class="products-mobile__select-wrapper">
-              <div class="products-mobile__select-item">
-                <input name="weight4" id="small4" type="radio" class="products-mobile__select-radio">
-                <label for="small4" class="products-mobile__select-label">0.6 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight4" checked id="medium4" type="radio" class="products-mobile__select-radio">
-                <label for="medium4" class="products-mobile__select-label">1 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight4" id="large4" type="radio" class="products-mobile__select-radio">
-                <label for="large4" class="products-mobile__select-label">2 кг</label>
-              </div>
-            </div>
-            <span class="products-mobile__card-price">1050 Р</span>
-            <div class="products__select-wrapper">
-              <select name="weight4" id="weight" class="products__card-weight">
-                <option value="0.6">0.6 кг</option>
-                <option value="1.0" selected>1 кг</option>
-                <option value="2.0">2 кг</option>
-              </select>
-            </div>
             <div class="products__btns">
 
-              <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+              <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
               <div class="products__card-cost">
-
                 <input  value="0шт" class="products__card-quanity">
                 <span class="products__card-price">1050 Р</span>
+
               </div>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
             </div>
           </div>
         </div>
-        <div id="inscriptions" class="products__card also-products__card">
+        <div id="recomend" class="products__card cart-other__card">
           <div class="products__cards-feauters">
-            <span class="products__card-hit">Хит</span>
-            <span class="products__card-new">Новинка</span>
+            <span class="products__card-hit cart-other__card-hit">Хит</span>
+            <span class="products__card-new cart-other__card-new">Новинка</span>
           </div>
           <div class="products__card-img">
             <img src="./img/products-1.jpg" alt="cake">
           </div>
-          <h3 class="title title_size_small title_color_shiraz products__card-title">Наполеон с ягодой</h3>
-          <p class="descr descr_size_product">Готовим из слоеного теста с ванильно-сливочным заварным кремом с мороженым пломбир и украшаем свежей ягодой.</p>
+          <div class="cart-other__card-price">1050 Р</div>
+          <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+          <div class="cart-other__card-weight">1 кг</div>
           <div class="products__card-controls">
-            <div class="products-mobile__select-wrapper">
-              <div class="products-mobile__select-item">
-                <input name="weight4" id="small4" type="radio" class="products-mobile__select-radio">
-                <label for="small4" class="products-mobile__select-label">0.6 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight4" checked id="medium4" type="radio" class="products-mobile__select-radio">
-                <label for="medium4" class="products-mobile__select-label">1 кг</label>
-              </div>
-              <div class="products-mobile__select-item">
-                <input name="weight4" id="large4" type="radio" class="products-mobile__select-radio">
-                <label for="large4" class="products-mobile__select-label">2 кг</label>
-              </div>
-            </div>
-            <span class="products-mobile__card-price">1050 Р</span>
-            <div class="products__select-wrapper">
-              <select name="weight4" id="weight" class="products__card-weight">
-                <option value="0.6">0.6 кг</option>
-                <option value="1.0" selected>1 кг</option>
-                <option value="2.0">2 кг</option>
-              </select>
-            </div>
             <div class="products__btns">
 
-              <button class="btn btn-reset btn-numerical btn_color_gradient-shiraz btn_size_small"><span>В корзину</span> <strong>1050 Р</strong></button>
+              <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
               <div class="products__card-cost">
-
                 <input  value="0шт" class="products__card-quanity">
                 <span class="products__card-price">1050 Р</span>
+
+              </div>
+              <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+            </div>
+          </div>
+        </div>
+        <div id="recomend" class="products__card cart-other__card">
+          <div class="products__cards-feauters">
+            <span class="products__card-hit cart-other__card-hit">Хит</span>
+            <span class="products__card-new cart-other__card-new">Новинка</span>
+          </div>
+          <div class="products__card-img">
+            <img src="./img/products-1.jpg" alt="cake">
+          </div>
+          <div class="cart-other__card-price">1050 Р</div>
+          <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+          <div class="cart-other__card-weight">1 кг</div>
+          <div class="products__card-controls">
+            <div class="products__btns">
+
+              <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
+              <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+              <div class="products__card-cost">
+                <input  value="0шт" class="products__card-quanity">
+                <span class="products__card-price">1050 Р</span>
+
+              </div>
+              <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
+            </div>
+          </div>
+        </div>
+        <div id="recomend" class="products__card cart-other__card">
+          <div class="products__cards-feauters">
+            <span class="products__card-hit cart-other__card-hit">Хит</span>
+            <span class="products__card-new cart-other__card-new">Новинка</span>
+          </div>
+          <div class="products__card-img">
+            <img src="./img/products-1.jpg" alt="cake">
+          </div>
+          <div class="cart-other__card-price">1050 Р</div>
+          <h3 class="title title_size_small title_color_shiraz cart-other__card-title">Наполеон с ягодой</h3>
+          <div class="cart-other__card-weight">1 кг</div>
+          <div class="products__card-controls">
+            <div class="products__btns">
+
+              <button class="btn btn-reset btn-numerical  btn_color_gradient-shiraz btn_size_small btn_hide_price"><span>В корзину</span> <strong>1050 Р</strong></button>
+              <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-minus btn_size_small">-</button>
+              <div class="products__card-cost">
+                <input  value="0шт" class="products__card-quanity">
+                <span class="products__card-price">1050 Р</span>
+
               </div>
               <button class="btn-reset btn btn_color_gradient-shiraz products__card-quanity-plus btn_size_small">+</button>
             </div>
@@ -651,6 +525,7 @@
         <div class="footer-mobile__icon">
           <img src="./img/svg/footer-mobile-3.svg" width="19" height="19" alt="icon">
         </div>
+        <span class="cart__num-products footer-mobile__cart">0</span>
         <div class="footer-mobile__name">Корзина</div>
       </li></a>
       <li class="footer-mobile__item burger">
