@@ -209,9 +209,23 @@ __webpack_require__.r(__webpack_exports__);
 
 const checkbox_container = document.querySelector('.also__checkbox');
 const also = document.querySelector('.also');
+let also_swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.also__swiper', {
+  slidesPerView: 2.5,
+  spaceBetween: 28,
+  breakpoints: {
+    768: {
+      slidesPerView: 4.5
+    },
+    1000: {
+      slidesPerView: 7
+    }
+  }
+});
 
 if (checkbox_container && also) {
-  const cards = also.querySelectorAll('.products__card');
+  const cards = also.querySelectorAll('.swiper-slide');
+  const swiper_wrapper = also.querySelector('.swiper-wrapper');
+  console.log(swiper_wrapper);
   const checkers = checkbox_container.querySelectorAll('.checkbox__input');
   const wrappers = checkbox_container.querySelectorAll('.checkbox__wrapper');
   wrappers.forEach((wrapper, i) => {
@@ -226,17 +240,26 @@ if (checkbox_container && also) {
         }
       });
       cards.forEach((card, i) => {
+        if (swiper_wrapper.contains(card)) {
+          swiper_wrapper.removeChild(card);
+        }
+      });
+      cards.forEach((card, i) => {
         if (!ex) {
-          card.classList.remove('also__hidden');
+          swiper_wrapper.appendChild(card);
         } else {
-          card.classList.add('also__hidden');
+          if (swiper_wrapper.contains(card)) {
+            swiper_wrapper.removeChild(card);
+          }
+
           checkers.forEach((checker, i) => {
             if (checker.id == card.id && checker.checked) {
-              card.classList.remove('also__hidden');
+              swiper_wrapper.appendChild(card);
             }
           });
         }
       });
+      also_swiper.update();
     });
   });
 }
@@ -486,12 +509,13 @@ const hero_mobile_swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["defau
     clickable: true
   }
 });
-const pagintaion = document.querySelector('.hero-mobile__controls');
+const pagination = document.querySelector('.hero-mobile__controls');
 
-if (pagintaion) {
+if (pagination) {
+  pagination.style = 'transform: translateX(12px)';
   const first_bullet = document.createElement("div");
   first_bullet.classList.add('first-bullet');
-  pagintaion.prepend(first_bullet);
+  pagination.prepend(first_bullet);
   first_bullet.addEventListener('click', () => {
     hero_mobile_swiper.slidePrev(300, false);
     first_bullet.style = 'display: none';
@@ -499,20 +523,25 @@ if (pagintaion) {
   const last_bullet = document.createElement("div");
   last_bullet.style = 'display: none';
   last_bullet.classList.add('last-bullet');
-  pagintaion.appendChild(last_bullet);
+  pagination.appendChild(last_bullet);
   last_bullet.addEventListener('click', () => {
     hero_mobile_swiper.slideNext(300, false);
     last_bullet.style = 'display: none';
   });
   hero_mobile_swiper.on('slideChange', () => {
+    pagination.style = '';
+    console.log(hero_mobile_swiper.activeIndex);
+
     if (hero_mobile_swiper.activeIndex == hero_mobile_swiper.slides.length - 1 || hero_mobile_swiper.activeIndex == 1) {
       first_bullet.style = '';
+      pagination.style = 'transform: translateX(12px)';
     } else {
       first_bullet.style = 'display: none';
     }
 
     if (hero_mobile_swiper.activeIndex == hero_mobile_swiper.slides.length - 2 || hero_mobile_swiper.activeIndex == 0) {
       last_bullet.style = '';
+      pagination.style = 'transform: translateX(-12px)';
     } else {
       last_bullet.style = 'display: none';
     }
@@ -530,6 +559,7 @@ if (pagintaion) {
 const locations = document.querySelectorAll('.location');
 const modal = document.querySelector('.modal-location');
 locations.forEach(location => {
+  console.log('active');
   location.addEventListener('click', () => {
     modal.classList.add('modal_active');
   });
@@ -677,13 +707,14 @@ if (pie_controls) {
   });
 }
 
-const pagintaion = document.querySelector('.pie__pagination');
+const pagination = document.querySelector('.pie__pagination');
 
-if (pagintaion) {
+if (pagination) {
+  pagination.style = 'transform: translateX(12px)';
   const first_bullet = document.createElement("div");
   first_bullet.classList.add('first-bullet');
   first_bullet.classList.add('only-mobile');
-  pagintaion.prepend(first_bullet);
+  pagination.prepend(first_bullet);
   first_bullet.addEventListener('click', () => {
     pie_swiper.slideTo(pie_swiper.slides.length - 1, 300, false);
     first_bullet.style = 'display: none';
@@ -692,13 +723,16 @@ if (pagintaion) {
   last_bullet.style = 'display: none';
   last_bullet.classList.add('last-bullet');
   last_bullet.classList.add('only-mobile');
-  pagintaion.appendChild(last_bullet);
+  pagination.appendChild(last_bullet);
   last_bullet.addEventListener('click', () => {
     pie_swiper.slideTo(0, 300, false);
     last_bullet.style = 'display: none';
   });
   pie_swiper.on('slideChange', () => {
+    pagination.style = 'transform: translateX(0)';
+
     if (pie_swiper.activeIndex == 0) {
+      pagination.style = 'transform: translateX(12px);';
       first_bullet.style = '';
     } else {
       first_bullet.style = 'display: none';
@@ -706,6 +740,7 @@ if (pagintaion) {
 
     if (pie_swiper.activeIndex == pie_swiper.slides.length - 1) {
       last_bullet.style = '';
+      pagination.style = 'transform: translateX(-12px);';
     } else {
       last_bullet.style = 'display: none';
     }
@@ -836,13 +871,17 @@ const reviews_swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]
     }
   }
 });
-const pagintaion = document.querySelector('.reviews__controls');
+const pagination = document.querySelector('.reviews__controls');
 
-if (pagintaion) {
+if (pagination) {
+  if (window.innerWidth < 768) {
+    pagination.style = 'transform: translateX(-15px)';
+  }
+
   const first_bullet = document.createElement("div");
   first_bullet.classList.add('first-bullet');
   first_bullet.classList.add('first-bullet_reviews');
-  pagintaion.prepend(first_bullet);
+  pagination.prepend(first_bullet);
   first_bullet.addEventListener('click', () => {
     reviews_swiper.slidePrev(300, false);
     first_bullet.style = 'display: none';
@@ -851,21 +890,25 @@ if (pagintaion) {
   last_bullet.style = 'display: none';
   last_bullet.classList.add('last-bullet');
   last_bullet.classList.add('last-bullet_reviews');
-  pagintaion.appendChild(last_bullet);
+  pagination.appendChild(last_bullet);
   last_bullet.addEventListener('click', () => {
     reviews_swiper.slideNext(300, false);
     last_bullet.style = 'display: none';
   });
   reviews_swiper.on('slideChange', () => {
     if (window.innerWidth < 768) {
+      pagination.style = 'transform: translateX(-27px)';
+
       if (reviews_swiper.activeIndex == reviews_swiper.slides.length - 1 || reviews_swiper.activeIndex == 1) {
         first_bullet.style = '';
+        pagination.style = 'transform: translateX(-15px)';
       } else {
         first_bullet.style = 'display: none';
       }
 
       if (reviews_swiper.activeIndex == reviews_swiper.slides.length - 2 || reviews_swiper.activeIndex == 0) {
         last_bullet.style = '';
+        pagination.style = 'transform: translateX(-40px)';
       } else {
         last_bullet.style = 'display: none';
       }
