@@ -3589,6 +3589,10 @@ input:disabled {
   }
 }
 
+video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
 .last-bullet {
   cursor: pointer;
   display: block;
